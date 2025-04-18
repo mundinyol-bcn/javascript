@@ -1,0 +1,222 @@
+<form name="f">
+
+<table border=0 style="background-color:#ffefd5; text-align:center; margin-left:auto; margin-right:auto; max-width:700px; width:98%;">
+    <tr> 
+    <td colspan=7> 
+    <div style="text-align:center; padding-top:5px; padding-bottom:5px;">
+	MARCADOR : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" style="border:none;">
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td colspan=7>
+    <div style="text-align:center; padding-top:5px; padding-bottom:5px;">
+    FALLOS (6): 
+    <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" style="border:none;">
+    </div>
+    </td>
+ 
+ </tr>
+ <tr>
+
+ <td colspan=7> 
+    <div style="text-align:center; padding-top:10px; padding-bottom:10px;"> 
+    <INPUT TYPE=TEXT NAME="word" VALUE="EL AHORCADO / 単語当て" onfocus="word.blur();" style="width:100%; font-size:130%; text-align:center; font-weight:bold; border:none;">
+    </div>
+</td>
+ 
+ </tr>
+<tr>
+
+ <td colspan=7> 
+    <div style="text-align:center; padding-top:5px; padding-bottom:5px;"> 
+    <INPUT TYPE=TEXT NAME="tried" VALUE="Pulsa COMENZAR / OTRA PALABRA" onfocus="tried.blur();" style="width:100%; font-size:100%;text-align:center; font-weight:bold; color:red; border:none; background-color: #ffefd5;">
+    </div>
+    </td>
+</tr>
+<tr>
+    <td colspan=7> 
+    <div style="text-align:center; padding-top:5px; padding-bottom:15px;"> 
+    <INPUT TYPE=BUTTON onclick="new_word(this.form);" VALUE="COMENZAR / OTRA PALABRA">
+    </div>
+    </td>
+</tr>
+<tr> 
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" A "   onclick="seek('A');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" B "   onclick="seek('B');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" C "   onclick="seek('C');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" D "   onclick="seek('D');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" E "   onclick="seek('E');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" F "   onclick="seek('F');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" G "   onclick="seek('G');">
+    </div>
+    </td>
+    </tr>
+    <tr>  
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" H "   onclick="seek('H');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" I   " onclick="seek('I');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" J  "  onclick="seek('J');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" K "   onclick="seek('K');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" L  "  onclick="seek('L');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" M "   onclick="seek('M');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" N "   onclick="seek('N');">
+    </div>
+    </td>
+ </tr>
+ <tr> 
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Ñ "   onclick="seek('Ñ');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" O "   onclick="seek('O');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" P "   onclick="seek('P');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Q "   onclick="seek('Q');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" R "   onclick="seek('R');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" S "   onclick="seek('S');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" T "   onclick="seek('T');">
+    </div>
+    </td>
+    </tr>
+    <tr>  
+
+ <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" U "   onclick="seek('U');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" V "   onclick="seek('V');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" X  "  onclick="seek('X');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Y "   onclick="seek('Y');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Z  "  onclick="seek('Z');">
+    </div>
+    </td>
+ </td><td> </td><td> 
+ </tr>
+
+<tr>
+<td colspan="7"><p style="font-weight:bold;">LAS VOCALES ACENTUADAS</p></td>
+</tr>
+
+ 
+ 
+ <tr>  
+ <td></td><td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Á "   onclick="seek('Á');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" É "   onclick="seek('É');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Í  "  onclick="seek('Í');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Ó "   onclick="seek('Ó');">
+    </div>
+    </td>
+    <td> 
+    <div style="text-align:center; padding-top:8px;">
+    <INPUT TYPE=BUTTON VALUE=" Ú  "  onclick="seek('Ú');">
+    </div>
+    </td><td></td>
+ </tr>
+ 
+ 
+ 
+ </table>
+</form>
