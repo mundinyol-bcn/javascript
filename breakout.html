@@ -1,0 +1,32 @@
+//https://magradacatalunya.com/barcelona/breakout/index.html
+
+<div style="margin-right:auto; margin-left:auto; text-align:center;">
+
+  <div class="controls">
+    <button onclick="startGame()">START</button>
+    <button onclick="stopGame()">STOP</button>
+    <button onclick="location.reload()">RESET</button>
+  </div>
+
+  <div style="position: relative; display: inline-block;">
+    <canvas id="gameCanvas" width="480" height="480"></canvas>
+    <img id="startImage" src="breakout.jpg" alt="Start Image">
+  </div>
+
+  <!-- サウンド -->
+  <audio id="hitSound" src="blocksound.mp3" preload="auto"></audio>
+
+  <!-- スピードコントロール（ゲームのボタンの下） -->
+  <div id="speedControls" style="margin-auto; margin-left:auto;">
+  <p style="text-align:center; color:red; font-weight:bold;">VELOCIDAD / SPEED<br><br>
+    <button onclick="setBallSpeed(1)">1</button>
+    <button onclick="setBallSpeed(2)">2</button>
+    <button onclick="setBallSpeed(3)">3</button>
+    <button onclick="setBallSpeed(4)">4</button>
+    <button onclick="setBallSpeed(5)">5</button></p>
+  </div>
+
+</div>
+
+<!-- JavaScriptは一番下で -->
+<script src="breakout.js"></script>
